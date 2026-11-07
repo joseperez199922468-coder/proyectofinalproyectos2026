@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Préstamos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('datatables/datatables.min.css') ?>">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
     <main class="container-fluid px-2 py-2">
@@ -39,7 +41,7 @@
         <?php endif ?>
 
         <div class="table-responsive border-top pt-2">
-            <table class="table table-bordered table-striped table-hover table-sm align-middle text-center mb-0">
+            <table id="dataTable" class="table table-bordered table-striped table-hover table-sm align-middle text-center mb-0">
                 <thead>
                     <tr>
                         <th scope="col">Id_prestamo</th>
@@ -215,6 +217,14 @@
         </div>
     </div>
 
+    <script src="<?= base_url('js/jquery-3.5.1.js') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('datatables/datatables.min.js') ?>"></script>
+    <script src="<?= base_url('datatables/Buttons-1.5.6/js/dataTables.buttons.min.js') ?>"></script>
+    <script src="<?= base_url('datatables/JSZip-2.5.0/jszip.min.js') ?>"></script>
+    <script src="<?= base_url('datatables/pdfmake-0.1.36/pdfmake.min.js') ?>"></script>
+    <script src="<?= base_url('datatables/pdfmake-0.1.36/vfs_fonts.js') ?>"></script>
+    <script src="<?= base_url('datatables/Buttons-1.5.6/js/buttons.html5.min.js') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('js/main.js') ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>
         document.getElementById('editarPrestamo').addEventListener('show.bs.modal', event => {
