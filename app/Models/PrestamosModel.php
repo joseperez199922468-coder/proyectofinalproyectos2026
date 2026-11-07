@@ -13,14 +13,11 @@ class PrestamosModel extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'id_prestamo',
         'id_usuario',
         'fecha_prestamo',
         'fecha_devolucion_previa',
         'fecha_devolucion',
         'estado',
         'observaciones'
-];
-
-    
+    ];
 }
