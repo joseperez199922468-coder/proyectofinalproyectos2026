@@ -1,0 +1,29 @@
+Instrucciones: 
+*  Descomprima la carpeta dentro del directorio public. Luego, en cada vista donde requiera este complemento, incorpórelo
+*  colocar en la tabla el id="dataTable"
+
+
+
+CSS y SCRIPT a utilizar en cada página
+
+<!--datables CSS básico-->
+    <link rel="stylesheet" type="text/css" href="<?=base_url('datatables/datatables.min.css')?>">
+<!--font awesome con CDN-->  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  
+
+
+<!--datatable colocar antes del js de bootstrap-->
+    <script src="<?= base_url('js/jquery-3.5.1.js') ?>"></script>
+    
+     <!-- datatables JS -->
+     <script type="text/javascript" src="<?= base_url('datatables/datatables.min.js')?>"></script>
+    
+ 
+    <!-- para usar botones en datatables JS -->
+    <script src="<?= base_url('datatables/Buttons-1.5.6/js/dataTables.buttons.min.js')?>"></script>
+    <script src="<?= base_url('datatables/JSZip-2.5.0/jszip.min.js')?>"></script>
+    <script src="<?= base_url('datatables/pdfmake-0.1.36/pdfmake.min.js')?>"></script>
+    <script src="<?= base_url('datatables/pdfmake-0.1.36/vfs_fonts.js')?>"></script>
+    <script src="<?= base_url('datatables/Buttons-1.5.6/js/buttons.html5.min.js')?>"></script>
+    <!-- código JS propìo (Nombres elementos de datatable en español)-->
+    <script type="text/javascript" src="<?= base_url('js/main.js')?>"></script>
