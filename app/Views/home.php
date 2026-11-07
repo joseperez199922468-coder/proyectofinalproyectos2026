@@ -32,12 +32,20 @@
                 <h2>Iniciar sesión</h2>
                 <p>Ingresa tus credenciales para continuar</p>
 
-                <form method="post">
-                    <label>Usuario</label>
-                    <input type="text">
+                <?php if (session()->getFlashdata('login_error')): ?>
+                    <p class="mensaje-error" role="alert"><?= esc(session()->getFlashdata('login_error')) ?></p>
+                <?php endif ?>
+                <?php if (session()->getFlashdata('login_success')): ?>
+                    <p class="mensaje-exito" role="status"><?= esc(session()->getFlashdata('login_success')) ?></p>
+                <?php endif ?>
 
-                    <label>Contraseña</label>
-                    <input type="password">
+                <form method="post" action="<?= esc($assetBase . 'login', 'attr') ?>">
+                    <?= csrf_field() ?>
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" autocomplete="username" required>
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" autocomplete="current-password" required>
 
                     <div class="opciones">
                         <label>
