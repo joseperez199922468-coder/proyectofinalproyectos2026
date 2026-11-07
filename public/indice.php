@@ -89,7 +89,7 @@
                 
             </div>
             <div class="opcion">
-                <button type="button">Préstamos</button>
+                <button type="button" onclick="window.location.href='prestamos.php'">Préstamos</button>
                 <span><h6>Elaborado por: <br>
                     Jose Enrique Perez Ramos</h6>
                 </span>
