@@ -8,7 +8,7 @@ $routes->get('/', 'Home::index');
 /*usuarios*/
 $routes->get('usuarios','UsuariosController::index');
 $routes->post('agregar_usuario','UsuariosController::guardar');
-
+$routes->get('eliminar_usuario/(:num)', 'UsuariosController::eliminar/$1');
 /* Inicio */
 $routes->get('inicio','InicioController::index');
 
