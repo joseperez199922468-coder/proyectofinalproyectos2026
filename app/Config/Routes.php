@@ -7,7 +7,7 @@ $routes->get('/', 'Home::index');
 
 /*usuarios*/
 $routes->get('usuarios','UsuariosController::index');
-
+$routes->post('agregar_usuario','UsuariosController::guardar');
 
 /* Inicio */
 $routes->get('inicio','InicioController::index');
