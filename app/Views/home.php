@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= esc($assetBase . 'css/style.css', 'attr') ?>">
-    <title>Inicio</title>
+    <title>Iniciar Sesión</title>
 </head>
 
 <body>
@@ -32,12 +32,12 @@
                 <h2>Iniciar sesión</h2>
                 <p>Ingresa tus credenciales para continuar</p>
 
-                <form method="post">
+                <form action="<?= base_url('validar_login') ?>" method="post" autocomplete="off">
                     <label>Usuario</label>
-                    <input type="text">
+                    <input type="text" name="txt_usuario" autocomplete="off">
 
                     <label>Contraseña</label>
-                    <input type="password">
+                    <input type="password" name="txt_pass">
 
                     <div class="opciones">
                         <label>
