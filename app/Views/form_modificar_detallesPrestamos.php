@@ -14,26 +14,33 @@
     <div class="container">
         <form action="<?= base_url('modificar_detallePrestamos'); ?>" method="post">
             <label for="txt_detalle" class="form-label">Id de Detalle</label>
-            <input type="number" name="txt_detalle" id="txt_detalle" class="form-control"  value="<?=$datos['id_detalle'];?>">
+            <input type="number" name="txt_detalle" id="txt_detalle" class="form-control"
+                value="<?=$datos['id_detalle'];?>">
             <label for="txt_prestamo" class="form-label">Id de Prestamo</label>
-            <input type="number" name="txt_prestamo" id="txt_prestamo" class="form-control"  value="<?=$datos['id_prestamo'];?>">
+            <input type="number" name="txt_prestamo" id="txt_prestamo" class="form-control"
+                value="<?=$datos['id_prestamo'];?>">
             <label for="txt_recurso" class="form-label">Id de Recurso</label>
-            <input type="text" name="txt_recurso" id="txt_recurso" class="form-control"  value="<?=$datos['id_recurso'];?>">
+            <input type="text" name="txt_recurso" id="txt_recurso" class="form-control"
+                value="<?=$datos['id_recurso'];?>">
             <label for="txt_cantidad" class="form-label">Cantidad</label>
-            <input type="number" name="txt_cantidad" id="txt_cantidad" class="form-control"   value="<?=$datos['cantidad'];?>">
+            <input type="number" name="txt_cantidad" id="txt_cantidad" class="form-control"
+                value="<?=$datos['cantidad'];?>">
             <label for="txt_salida" class="form-label">Estado de salida</label>
-            <input type="text" name="txt_salida" id="txt_salida" class="form-control"   value="<?=$datos['estado_salida'];?>">
+            <input type="text" name="txt_salida" id="txt_salida" class="form-control"
+                value="<?=$datos['estado_salida'];?>">
             <label for="txt_devolucion" class="form-label">Estado devolucion</label>
-            <input type="text" name="txt_devolucion" id="txt_devolucion" class="form-control"  value="<?=$datos['estado_devolucion'];?>">
+            <input type="text" name="txt_devolucion" id="txt_devolucion" class="form-control"
+                value="<?=$datos['estado_devolucion'];?>">
             <label for="txt_observaciones" class="form-label">Observaciones</label>
-            <input type="text" name="txt_observaciones" id="txt_observaciones" class="form-control"  value="<?=$datos['observaciones'];?>">    
+            <input type="text" name="txt_observaciones" id="txt_observaciones" class="form-control"
+                value="<?=$datos['observaciones'];?>">
             <button type="submit" class="btn btn-primary form-control mt-2">Guardar</button>
 
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>

@@ -65,6 +65,6 @@ class DetallePrestamosController extends BaseController
 
         $prestamo->update($codigo, $datos);
 
-        return redirect()->to(base_url('detalleprestamos'));
+        return redirect()->to(base_url('prestamos'));
     }
 }
